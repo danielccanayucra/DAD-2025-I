@@ -2,8 +2,15 @@ server:
 
   port: 8084
 spring:
+  application:
+    name: rdcm-curso-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
   datasource:
-    url: jdbc:mysql://localhost:3306/rdcm_cursos
+    url: jdbc:mysql://localhost:3306/rdcm_asignaturas
     username: root
     password: ""
     driver-class-name: com.mysql.cj.jdbc.Driver
